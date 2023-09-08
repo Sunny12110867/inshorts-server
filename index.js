@@ -17,8 +17,14 @@ const PORT = process.env.PORT||8000;
 
 
 
+
+
 Connection();
 app.listen(PORT, ()=> console.log(`server is runnings succefully on port ${PORT}`));
 
 DefaultData();   
+
+app.get("/",(req,res)=>{
+   res.json("hello world");
+})
 
